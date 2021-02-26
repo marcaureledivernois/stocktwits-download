@@ -10,15 +10,7 @@ from requests.packages.urllib3.util.retry import Retry
 
 base_url = 'https://api.stocktwits.com/api/2/streams/symbol/'
 todo_list =  os.path.join('C:\\Users', 'divernoi', 'Dropbox','ticker_list_todo.txt')
-access_token_list = ['1f884b1423fc42db61e12420c637798a619e19f8',
-                     'c0f3bf6f489610fdedcd780b2772f7e14c3553f2',
-                     '6e8e76779c49dfbfb3026dd924321f3fa8b151a7',
-                     'fafc63990c17bbd74d0578d28031723754154e48',
-                     'ff553307d39b44bfde2ced9f8391effae61a79f2',
-                     'dd1941bed2f0db234223b9f8182fc7b4251a4f28',
-                     '0f2f4d0ae5a6ed783f647fe259cd797caa001657',
-                     '693226ee6815b6231bb6f285c692d2b891ff4b27',
-                     '88dc7edc7ec59156e1fd8f2a25f6bb3fa7c17a62']
+access_token_list = 'CENSORED'
 
 ticker_list = []
 f = open(os.path.join('C:\\Users','divernoi','Dropbox','ticker_list_todo.txt'),"r", encoding="utf8")
@@ -136,6 +128,6 @@ f.close()
 
 ############ post request to get access token ###############
 
-# r = requests.post("https://api.stocktwits.com/api/2/oauth/token", data={'client_id': '4da4e30027544fb4', 'client_secret': 'f69871404b8052b697eb59b3a6138530dcdcbaaf','code' : '034eb5cc9296965ac3019ade77af3b5efab64d61' ,'grant_type': 'authorization_code','redirect_uri':'https://stocktwits.com/'})
+# r = requests.post("https://api.stocktwits.com/api/2/oauth/token", data={'client_id': 'CENSORED', 'client_secret': 'CENSORED','code' : 'CENSORED' ,'grant_type': 'authorization_code','redirect_uri':'https://stocktwits.com/'})
 
 
