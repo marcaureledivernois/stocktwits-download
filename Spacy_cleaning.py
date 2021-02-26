@@ -9,8 +9,6 @@ import spacy
 df = pd.read_pickle('P:\\df_withcorona.pkl')
 
 #========================================= dummy sentiment =============================================================
-# work with 1000 first messages first... to avoid 10000hours of comp time
-# df = df.tail(1000)
 
 def dumsent(x):
     if not x:
